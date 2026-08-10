@@ -114,6 +114,18 @@
         </ng-template>
       </li>
 
+      <li role="presentation" ngbNavItem="alerts" [disabled]="!context.summary">
+        <button type="button" role="tab" ngbNavLink (click)="navItemClick('alerts', $event)"
+          attr.aria-live="polite"
+          routerLink="/staff/circ/patron/{{patronId}}/alerts" i18n>
+            Alerts
+          </button>
+        <ng-template ngbNavContent>
+          <eg-title i18n-prefix [prefix]="patronTitle('Alerts')"></eg-title>
+          <eg-patron-alerts></eg-patron-alerts>
+       </ng-template>
+      </li>
+
       <li role="presentation" ngbNavItem="holds" [disabled]="!context.summary">
         <button type="button" role="tab" ngbNavLink (click)="navItemClick('holds', $event)"
           attr.aria-live="polite"
