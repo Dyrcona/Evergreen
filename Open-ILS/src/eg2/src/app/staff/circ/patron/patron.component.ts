@@ -34,6 +34,7 @@ import { TestPatronPasswordComponent } from './test-password.component';
 import { BillStatementComponent } from './bill-statement.component';
 import { BillingHistoryComponent } from './billing-history.component';
 import {ToastService} from '@eg/share/toast/toast.service';
+import { PatronAlertsComponent } from './alerts.component';
 
 @Component({
     templateUrl: 'patron.component.html',
@@ -48,6 +49,7 @@ import {ToastService} from '@eg/share/toast/toast.service';
         HoldsComponent,
         ItemsComponent,
         EditToolbarComponent,
+        PatronAlertsComponent,
         PatronGroupComponent,
         PatronMessagesComponent,
         PatronPermsComponent,
@@ -303,6 +305,7 @@ export class PatronComponent implements OnInit, OnDestroy {
 
     routeToAlertsPane() {
         if (this.patronTab !== 'search' &&
+            this.patronTab !== 'alerts' &&
             this.context.summary &&
             this.context.summary.alerts.hasAlerts() &&
             !this.context.patronAlertsShown()) {
