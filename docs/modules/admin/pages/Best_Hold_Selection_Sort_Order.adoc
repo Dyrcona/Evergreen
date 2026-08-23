@@ -2,7 +2,7 @@
 = Best-Hold Selection Sort Order =
 :toc:
 
-When an item is captured for a hold upon check-in, Evergreen evaluates the holds in the system that the item could fill. Evergreen then uses a set of rules, or a Best-Hold Selection Sort Order, to determine the best hold to fill with the item.  Best-Hold Selection Sort Order (BHSSO) allows libraries to configure customized rules, whether by creating new sets of rules or modifying existing ones,  for Evergreen to use to select the best hold to fill at opportunistic capture. These rules is that they answer the question, “What is important to your library when ordering holds to be filled?” BHSSOs are created in *Administration* → *Server Administration* → *Best-Hold Selection Sort Order*. A BHSSO is then set per organizational unit under *Local Administration* → *Library Settings Editor* → *Best-hold selection sort order*.
+When an item is captured for a hold upon check in, Evergreen evaluates the holds in the system that the item could fill. Evergreen then uses a set of rules, or a Best-Hold Selection Sort Order, to determine the best hold to fill with the item.  Best-Hold Selection Sort Order (BHSSO) allows libraries to configure customized rules, whether by creating new sets of rules or modifying existing ones,  for Evergreen to use to select the best hold to fill at opportunistic capture. These rules is that they answer the question, “What is important to your library when ordering holds to be filled?” BHSSOs are created in *Administration* → *Server Administration* → *Best-Hold Selection Sort Order*. A BHSSO is then set per organizational unit under *Local Administration* → *Library Settings Editor* → *Best-hold selection sort order*.
 
 == Preconfigured Best-Hold Orders ==
 Evergreen comes with seven preconfigured Best-Hold Selection Sort Orders to choose from:
@@ -17,7 +17,7 @@ Evergreen comes with seven preconfigured Best-Hold Selection Sort Orders to choo
 
 *Traditional*
 
-* Uses xref:Org_Unit_Proximity_Adjustments.adoc[Org Unit Proximity] to identify the nearest hold to fill, prioritizing holds where the check-in/capture library is the same as the pickup library.
+* Uses xref:Org_Unit_Proximity_Adjustments.adoc[Org Unit Proximity] to identify the nearest hold to fill, prioritizing holds where the check in/capture library is the same as the pickup library.
 * Can help fill holds more efficiently and reduce transit of items.
 * Holds are not filled in order they were placed.
 
