@@ -969,7 +969,7 @@ the number of organizational unit copies attached to a record
 age-protected items
 
 *ITEM_DEPOSIT_PAID.override.* Allows a user to override the alert upon
-check-in of an item that requires a deposit
+check in of an item that requires a deposit
 
 *ITEM_DEPOSIT_REQUIRED.override.* Allows a user to override the alert
 upon checkout of an item that requires a deposit
