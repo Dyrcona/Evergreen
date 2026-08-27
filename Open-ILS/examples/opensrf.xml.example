@@ -676,6 +676,9 @@ vim:et:ts=4:sw=4:
                     <marc_html_xsl>oilsMARC21slim2HTML.xsl</marc_html_xsl>
                     <marc_html_xsl_slim>oilsMARC21slim2HTMLslim.xsl</marc_html_xsl_slim>
 
+                    <!-- WARNING: do not change this unless you know what you're doing! -->
+                    <!-- <cache_timeout>300</cache_timeout> -->
+
                     <spelling_dictionary>
                         <!-- 
                             Optionally configure different dictionaries depending on search context.  
